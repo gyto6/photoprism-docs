@@ -48,7 +48,7 @@ With older versions, the schema could only be updated manually. However, newer M
 To manually upgrade the internal database schema, run this command in a terminal:
 
 ```bash
-docker-compose exec mariadb mariadb-upgrade -uroot -p
+docker-compose exec mariadb mariadb-upgrade -u root -p
 ```
 
 Enter the MariaDB "root" password specified in your `docker-compose.yml` when prompted.
@@ -136,7 +136,7 @@ docker-compose up -d mariadb
 Now open a database console:
 
 ```bash
-docker-compose exec mariadb mysql -uroot
+docker-compose exec mariadb mysql -u root
 ```
 
 Enter the following commands to change the password for "root":
